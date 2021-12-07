@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Job Application</title>
+	<style>
+		h1
+		{
+			text-align: center;
+		
+			background:linear-gradient(45deg,#7E3517,#E38AAE,#7D1B7E);
+			padding: 15px;
+			width: 600px;
+			margin:auto;
+			box-shadow: 0 0 10px black;
+			border-radius: 10px;
+			word-spacing: 5px;
+			font-size: 35px;
+		}
+		body
+		{
+			background:linear-gradient(60deg,#FBB117,#98FF98,#E55451);
+			font-family: 'comic sans ms', sans-serif;
+		}
+		fieldset
+		{
+			border-radius: 10px;
+			box-shadow: 0 0 20px black;
+			padding: 10px;
+			margin:30px;
+		}
+		fieldset legend
+		{
+			border-radius: 0 30px 0 30px;
+			box-shadow: 0 0 20px black;
+            padding: 10px;
+            margin:5px;
+            background:linear-gradient(45deg,#7E3517,#E38AAE,#7D1B7E);
+            border-bottom: 2px solid black;
+		}
+		table
+		{
+			width:100%;
+		}
+		td input
+		{
+			border-radius: 5px;
+			padding: 5px;
+		}
+		textarea
+		{
+			border-radius: 5px;
+			padding: 5px;
+			border:2px solid black;
+		}
+        #sr input
+        {
+        	background:linear-gradient(45deg,#7E3517,#E38AAE,#7D1B7E);
+        	padding: 10px 30px;
+        	margin:10px;
+        	border-radius: 10px;
+        	font-size: 18px;
+        	box-shadow: 0 0 10px black; 
+        }
+        #sr input:hover
+        {
+        	background: linear-gradient(45deg,#00b09b,#96c93d);
+        }
+	</style>
+</head>
+<body>
+<h1>Online Job Application</h1>
+<div>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<table>
+			<tr>
+				<td><label>First Name</label></td>
+				<td><input type="text"></td>
+				<td><label>Middle Name</label></td>
+				<td><input type="text"></td>
+				<td><label>Last Name</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label>Father's Name</label></td>
+				<td><input type="text"></td>
+				<td><label>Mother's Name</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label> Current Address</label></td>
+				<td><textarea cols="20" rows="4"></textarea></td>
+				<td><label>Permanent Address</label></td>
+				<td><textarea cols="20" rows="4"></textarea></td>
+			</tr>
+			<tr>
+				<td>Phone Numbers:</td>
+			</tr>
+			<tr>
+				<td><label>Mobile Number</label></td>
+				<td><input type="Number"></td>
+				<td><label>Tell Number</label></td>
+				<td><input type="Number"></td>
+			</tr>
+			<tr>
+				<td><label>Date Of Birth</label></td>
+				<td><input type="Date"></td>
+			</tr>
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="Email"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label>Gender</label></td>
+                <td><input type="radio" name="r1">Male</td>
+                <td><input type="radio" name="r1">Female</td>
+			</tr>
+			<tr>
+				<td colspan="2">Hobbies</td>
+			    <td><input type="checkbox" name="B1">Eating</td>
+				<td><input type="checkbox" name="c1">Chatting</td>
+				<td><input type="checkbox" name="d1">Sleeping</td>
+			</tr>
+			<tr><td>Nationality</td>
+					<td><select><option>select</option>
+								<option>African</option>
+								<option>Asian</option>
+								<option>European</option>	
+								<option>Indian</option></select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label>Marital Status</label></td>
+                <td><input type="radio" name="r1">Married</td>
+                <td><input type="radio" name="r1">Unmarried</td>
+			</tr>
+			<tr>
+				<td><label>PanCard</label></td>
+                <td><input type="number"></td>
+                <td><label>AadharCard</label></td>
+                <td><input type="number"></td>
+            </tr>
+			<tr>
+				<td><label>Highest Qualification</label></td>
+                <td><input type="text"></td>
+                <td><label>Passing Year</label></td>
+                <td><input type="number" min="2000" max="2022"></td>
+			</tr>
+			
+		</table>
+	</fieldset>
+</div>
+<div>
+	<form>
+	<fieldset>
+		<legend>Educational Details</legend>
+		<table>
+			<tr><td>S.No</td>
+				<td>Qualification</td>
+				<td>Institute/University</td>
+				<td>Year Of Passing</td>
+				<td>Marks(%)</td>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td><input type="text"></td>
+		        <td><input type="text"></td>
+				<td><input type="Number" min="2000" max="2022"></td>
+				<td><input type="number" min="0" max="100"></td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td><input type="text"></td>
+		        <td><input type="text"></td>
+				<td><input type="Number" min="2000" max="2022"></td>
+				<td><input type="number" min="0" max="100"></td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td><input type="text"></td>
+		        <td><input type="text"></td>
+				<td><input type="Number" min="2000" max="2022"></td>
+				<td><input type="number" min="0" max="100"></td>
+			</tr>
+		</table>
+	</fieldset>
+	</form>
+</div>
+<div>
+	<form>
+	<fieldset>
+		<legend>Work Experience</legend>
+		<table>
+			<tr>
+				<td>S.No</td>
+				<td>Company</td>
+				<td>Role/Work</td>
+				<td>Experience</td>
+				<td>Form Date</td>
+				<td>To Date</td>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td><textarea rows="3" cols="20"></textarea></td>
+		        <td><textarea rows="3" cols="20"></textarea></td>
+				<td><input type="text" ></td>
+		        <td><input type="date"></td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+				<td>2.</td>
+		        <td><textarea rows="3" cols="20"></textarea></td>
+				<td><textarea rows="3" cols="20"></textarea></td>
+				<td><input type="text" ></td>
+				<td><input type="date"></td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+			    <td>3.</td>
+				<td><textarea rows="3" cols="20"></textarea></td>
+				<td><textarea rows="3" cols="20"></textarea></td>
+				<td><input type="text" ></td>
+				<td><input type="date"></td>
+				<td><input type="date"></td>
+			</tr>
+		</table>
+	</fieldset>
+    </form>
+</div>
+<div>
+	<form>
+		<fieldset>
+			<legend>Other Details</legend>
+			<table>
+				<tr>
+					<td>Type Of Employee</td>
+					<td><input type="radio" name="r1">Permanent</td>
+					<td><input type="radio" name="r1">Contract</td>
+					<td><input type="radio" name="r1">Others</td>
+                </tr>
+                <tr>
+                	<td>Are You Ready To Relocate?</td>
+                	<td><input type="radio" name="y">Yes</td>
+                	<td><input type="radio" name="y">No</td>
+                </tr>
+                <tr>
+                	<td><input type="checkbox" name="c">I here by declare that the above information provided by me is true to my knowledge.</td>
+                </tr>
+			</table>
+		</fieldset>
+	</form>
+</div>
+<div id="sr">
+	<form style="text-align:center;margin-top: 20px;padding: 10px;">
+		<input type="submit">
+		<input type="reset">
+	</form>
+</div>
+</body>
+</html>
